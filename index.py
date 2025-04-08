@@ -10,5 +10,23 @@ print(df.tail())
 print(df.info())
 print(df.describe())
 
+#  List of key columns to analyze (adjust based on your dataset)
+key_columns = [
+    "Children under 5 years who are stunted (height-for-age)18 (%)",
+    "Children under 5 years who are wasted (weight-for-height)18 (%)",
+    "Children under 5 years who are underweight (weight-for-age)18 (%)",
+    "Children age 6-59 months who are anaemic (<11.0 g/dl)22 (%)",
+    "Children under 5 years who are overweight (weight-for-height)20 (%)"
+]
+
+#  Histogram for each indicator
+for col in key_columns:
+    plt.figure(figsize=(8, 4))
+    sns.histplot(df[col], kde=True, color='skyblue')
+    plt.title(f"Distribution of {col}")
+    plt.xlabel(col)
+    plt.ylabel("Number of Districts")
+    plt.tight_layout()
+    plt.show()
 
 
