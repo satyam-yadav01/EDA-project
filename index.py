@@ -10,7 +10,10 @@ print(df.tail())
 print(df.info())
 print(df.describe())
 
-#  List of key columns to analyze (adjust based on your dataset)
+## Objective 1- To analyze and compare the prevalence of child malnutrition indicators—such as stunting,
+##  wasting, and underweight—across districts in India.
+
+#  List of key columns to analyze
 key_columns = [
     "Children under 5 years who are stunted (height-for-age)18 (%)",
     "Children under 5 years who are wasted (weight-for-height)18 (%)",
