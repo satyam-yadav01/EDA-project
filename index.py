@@ -145,7 +145,7 @@ for indicator in indicators:
     plt.tight_layout()
     plt.show()
 
-'''
+
 # ---------------- Objective 3 ----------------
 # Explore correlation between indicators
 
@@ -160,7 +160,7 @@ plt.show()
 sns.pairplot(df_short)
 plt.suptitle("Pairwise Relationships Between Indicators", y=1.02)
 plt.show()
-
+'''
 # ---------------- Objective 4 ----------------
 # Geographic comparison (State-wise)
 
