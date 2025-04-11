@@ -175,9 +175,10 @@ sns.barplot(data=state_avg_melted, x="Value", y="State/UT", hue="Indicator")
 plt.title("State-wise Average of Child Malnutrition Indicators")
 plt.tight_layout()
 plt.show()
-'''
 
 
+# ---------------- Objective 5 ----------------
+# Actionable insights for top worst-affected districts
 
 # Step 1: Summary statistics for understanding the overall situation
 summary_stats = df[key_columns].describe()
@@ -228,4 +229,4 @@ print("""
 4. Collaborate with NGOs to conduct focused awareness, education, and supplementation drives.
 5. Allocate resources and policy funding regionally, prioritizing high-risk districts.
 """)
-'''
+
