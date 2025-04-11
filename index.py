@@ -160,7 +160,7 @@ plt.show()
 sns.pairplot(df_short)
 plt.suptitle("Pairwise Relationships Between Indicators", y=1.02)
 plt.show()
-'''
+
 # ---------------- Objective 4 ----------------
 # Geographic comparison (State-wise)
 
@@ -175,7 +175,7 @@ sns.barplot(data=state_avg_melted, x="Value", y="State/UT", hue="Indicator")
 plt.title("State-wise Average of Child Malnutrition Indicators")
 plt.tight_layout()
 plt.show()
-
+'''
 
 
 
